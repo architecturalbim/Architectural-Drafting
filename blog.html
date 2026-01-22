@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | CAD Drafting India | Industry Insights & Technical Articles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .accent-text { color: #D9916A; }
+        .accent-bg { background-color: #D9916A; }
+        .accent-border { border-color: #D9916A; }
+        
+        .blog-header {
+            background-color: #F8F9FA;
+            background-image: linear-gradient(135deg, rgba(217, 145, 106, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .blog-card:hover .blog-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-white text-[#212529]">
+
+    <!-- Simple Navigation -->
+    <nav class="border-b border-slate-100 py-6 sticky top-0 bg-white z-50">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-8 h-8 accent-bg flex items-center justify-center rounded shadow-md">
+                    <span class="text-white font-bold text-lg">C</span>
+                </div>
+                <h1 class="font-bold text-lg tracking-tight text-[#212529]">
+                    CAD <span class="accent-text">DRAFTING</span> INDIA
+                </h1>
+            </a>
+            <div class="hidden md:flex space-x-8 font-semibold text-xs uppercase tracking-widest">
+                <a href="index.html" class="hover:accent-text transition-colors">Home</a>
+                <a href="index.html#expertise" class="hover:accent-text transition-colors">Services</a>
+                <a href="index.html#projects" class="hover:accent-text transition-colors">Portfolio</a>
+                <a href="#" class="accent-text">Blog</a>
+                <a href="index.html#contact" class="hover:accent-text transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="blog-header py-20 border-b border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl">
+                <span class="accent-text font-bold uppercase tracking-widest text-sm mb-4 block">Our Journal</span>
+                <h1 class="text-5xl font-black text-slate-800 leading-tight mb-6">Insights into <span class="accent-text">Architectural</span> Precision & CAD Innovations</h1>
+                <p class="text-lg text-slate-500 leading-relaxed">Exploring the intersection of technology, engineering, and design. Stay updated with the latest trends in BIM, CAD outsourcing, and construction documentation.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-16">
+        <div class="container mx-auto px-6">
+            <!-- Centered Grid without Sidebar -->
+            <div class="max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-16">
+                    
+                    <!-- Post 1 -->
+                    <article class="blog-card group cursor-pointer">
+                        <div class="overflow-hidden rounded-2xl mb-6 aspect-[16/10] bg-slate-100 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1503387762-592dea58ef21?auto=format&fit=crop&q=80&w=800" alt="BIM Trends" class="blog-image w-full h-full object-cover transition-transform duration-700">
+                        </div>
+                        <div class="flex items-center space-x-4 mb-4 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                            <span class="accent-text">BIM Technology</span>
+                            <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
+                            <span>Jan 15, 2026</span>
+                        </div>
+                        <h2 class="text-2xl font-bold text-slate-800 mb-4 group-hover:accent-text transition-colors leading-tight">
+                            The Future of BIM: AI and Real-time Collaboration in 2026
+                        </h2>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Discover how generative design and cloud-based BIM platforms are enabling faster turnaround times for complex architectural projects...
+                        </p>
+                    </article>
+
+                    <!-- Post 2 -->
+                    <article class="blog-card group cursor-pointer">
+                        <div class="overflow-hidden rounded-2xl mb-6 aspect-[16/10] bg-slate-100 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800" alt="Outsourcing" class="blog-image w-full h-full object-cover transition-transform duration-700">
+                        </div>
+                        <div class="flex items-center space-x-4 mb-4 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                            <span class="accent-text">Management</span>
+                            <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
+                            <span>Jan 10, 2026</span>
+                        </div>
+                        <h2 class="text-2xl font-bold text-slate-800 mb-4 group-hover:accent-text transition-colors leading-tight">
+                            Maximizing ROI: A Guide to CAD Outsourcing for UK Firms
+                        </h2>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Learn the key strategies for managing offshore teams and ensuring quality standards remain consistent across international borders...
+                        </p>
+                    </article>
+
+                    <!-- Post 3 -->
+                    <article class="blog-card group cursor-pointer">
+                        <div class="overflow-hidden rounded-2xl mb-6 aspect-[16/10] bg-slate-100 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="Sustainability" class="blog-image w-full h-full object-cover transition-transform duration-700">
+                        </div>
+                        <div class="flex items-center space-x-4 mb-4 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                            <span class="accent-text">Sustainability</span>
+                            <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
+                            <span>Jan 05, 2026</span>
+                        </div>
+                        <h2 class="text-2xl font-bold text-slate-800 mb-4 group-hover:accent-text transition-colors leading-tight">
+                            Drafting for the Planet: LEED Compliance in Technical Sets
+                        </h2>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Practical implementation of sustainable design features into construction documents to meet green building certifications globally...
+                        </p>
+                    </article>
+
+                    <!-- Post 4 -->
+                    <article class="blog-card group cursor-pointer">
+                        <div class="overflow-hidden rounded-2xl mb-6 aspect-[16/10] bg-slate-100 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Point Cloud" class="blog-image w-full h-full object-cover transition-transform duration-700">
+                        </div>
+                        <div class="flex items-center space-x-4 mb-4 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                            <span class="accent-text">Renovation</span>
+                            <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
+                            <span>Dec 28, 2025</span>
+                        </div>
+                        <h2 class="text-2xl font-bold text-slate-800 mb-4 group-hover:accent-text transition-colors leading-tight">
+                            From Scan to BIM: The Accuracy of Point Cloud Conversion
+                        </h2>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Exploring how laser scanning and specialized software are revolutionizing the restoration of heritage and commercial buildings...
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Updated Footer (Removed Socials & Copyright Year) -->
+    <footer class="bg-[#212529] text-slate-400 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-white font-bold text-2xl mb-6 uppercase tracking-tight">
+                CAD <span class="accent-text">DRAFTING</span> INDIA
+            </h1>
+            <p class="max-w-md mx-auto text-sm leading-relaxed">
+                High-precision drafting and BIM solutions for architectural firms globally.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
