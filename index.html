@@ -3,332 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architectural Drafting Services | CAD Drafting India</title>
-    <meta name="description" content="Expert Architectural Drafting services by CAD Drafting India. Get accurate, detailed, and ready-to-use plans for all your construction and building projects.">
-    <link rel="canonical" href="https://architecturalbim.github.io/Architectural-Drafting/">
-    <meta name="google-site-verification" content="1kuo7lC7rLjmdGiZ0MtoRiTPLMlgzPDpjxfljwWhrUk" />
-<meta name="robots" content="index, follow" />
-<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />\
-<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <title>Precision Engineering with Virtual Reality & Revit BIM</title>
+    <meta name="description" content="how Precision Engineering Virtual Reality and Revit BIM Services improve design accuracy, coordination, and decision-making across projects.">
+    
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
         
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
         }
 
-        .hero-bg {
-            background-color: #D1D1D1;
-            background-image: linear-gradient(30deg, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.2) 100%);
-        }
-
-        .accent-text { color: #D9916A; }
-        .accent-bg { background-color: #D9916A; }
-        .accent-border { border-color: #D9916A; }
-        
-        .nav-scrolled {
-            background-color: rgba(255, 255, 255, 0.95);
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-            padding-top: 1rem;
-            padding-bottom: 1rem;
+            transition: all 0.3s ease;
         }
 
-        .expertise-card:hover .icon-box {
-            background-color: #D9916A;
-            color: white;
+        .hero-gradient {
+            background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
         }
 
-        .expertise-card:hover .accent-line {
-            width: 100%;
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
-        .project-card:hover img {
-            transform: scale(1.1);
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-bottom-color: #1e3a8a;
         }
 
-        /* Animation utilities */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease-out;
+        .footer-skyline {
+            background-image: url('https://www.transparenttextures.com/patterns/city-skyline.png');
+            background-repeat: repeat-x;
+            background-position: top;
         }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: #1e3a8a;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(-5deg);
         }
     </style>
 </head>
-<body class="bg-white text-[#212529]">
+<body class="text-slate-900 bg-white">
 
     <!-- Navigation -->
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 opacity-0 pointer-events-none">
+    <nav id="navbar" class="fixed w-full z-50 py-4 transition-all duration-300 border-b border-transparent">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 accent-bg flex items-center justify-center rounded-lg shadow-lg">
-                    <span class="text-white font-bold text-xl">C</span>
+            <div class="logo-container">
+                <div class="logo-icon shadow-lg">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
                 </div>
-                <h1 class="font-bold text-xl tracking-tight text-[#212529]">
-                    CAD <span class="accent-text">DRAFTING</span> INDIA
-                </h1>
+                <div class="flex flex-col leading-tight">
+                    <span class="text-blue-900 font-extrabold text-xl tracking-tight uppercase">Revit</span>
+                    <span class="text-blue-600 font-bold text-xs tracking-[0.2em] uppercase">BIM Services</span>
+                </div>
             </div>
-            <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wider">
-                <a href="#about" class="hover:accent-text transition-colors">About</a>
-                <a href="#expertise" class="hover:accent-text transition-colors">Expertise</a>
-                <a href="#projects" class="hover:accent-text transition-colors">Projects</a>
-                <a href="blog.html" class="hover:accent-text transition-colors">Blog</a>
-                <a href="#contact" class="accent-text">Contact</a>
+
+            <div class="hidden md:flex gap-8 items-center font-medium">
+                <a href="#home" class="hover:text-blue-700 transition-colors text-slate-700">Home</a>
+                <a href="#services" class="hover:text-blue-700 transition-colors text-slate-700">Services</a>
+                <a href="#about" class="hover:text-blue-700 transition-colors text-slate-700">About</a>
+                <a href="#contact" class="hover:text-blue-700 transition-colors text-slate-700">Contact</a>
             </div>
+
+            <button class="md:hidden text-blue-900 text-2xl" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-6 flex flex-col gap-4 shadow-xl">
+            <a href="#home" class="text-lg font-semibold text-blue-900 nav-link">Home</a>
+            <a href="#services" class="text-lg font-semibold text-blue-900 nav-link">Services</a>
+            <a href="#about" class="text-lg font-semibold text-blue-900 nav-link">About</a>
+            <a href="#contact" class="text-lg font-semibold text-blue-900 nav-link">Contact</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative pt-24 pb-20 md:pt-32 md:pb-32 overflow-hidden hero-bg">
-        <div class="container mx-auto px-6 relative z-20 flex flex-col items-center text-center">
-            <div class="flex items-center space-x-4 mb-12">
-                <div class="w-16 h-16 md:w-20 md:h-20 bg-[#D9916A]/80 flex items-center justify-center rounded-2xl shadow-xl border border-white/20">
-                    <span class="text-white font-bold text-4xl md:text-5xl drop-shadow-md">C</span>
-                </div>
-                <h1 class="text-3xl md:text-5xl font-black tracking-tight text-slate-800 uppercase">
-                    CAD <span class="accent-text">Drafting</span> India
+    <section id="home" class="hero-gradient relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="container mx-auto px-6 text-center">
+            <div class="relative z-10 max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-blue-950 leading-tight mb-6">
+                    Precision Engineering <br />
+                    <span class="text-blue-700">Virtual Reality.</span>
                 </h1>
+                <p class="text-lg md:text-xl text-slate-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Comprehensive Revit BIM solutions for accurate modeling, coordination, and project efficiency. We act as an integrated extension of your team to accelerate project delivery.
+                </p>
             </div>
-
-            <div class="inline-block px-6 py-2 bg-transparent border border-slate-400/30 rounded-full mb-10">
-                <span class="accent-text font-bold text-sm md:text-base tracking-wide uppercase">
-                    #1 CAD Outsourcing Partner Since 2007
-                </span>
-            </div>
-
-            <h2 class="text-5xl md:text-8xl font-black text-slate-800 leading-[0.9] mb-12 max-w-5xl">
-                Precision <span class="accent-text">Architectural</span> <br />
-                Drafting Solutions
-            </h2>
-
-            <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
-                Transforming your conceptual sketches into detailed, permit-ready construction documents.
-            </p>
-
-            <div class="flex flex-col sm:flex-row">
-                <a href="#contact" class="accent-bg text-white px-10 py-5 rounded-lg font-bold text-xl hover:bg-[#c47d57] transition-all flex items-center justify-center shadow-2xl">
-                    Start a Project <i class="fas fa-chevron-right ml-3"></i>
-                </a>
+            
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full pointer-events-none">
+                <div class="absolute top-0 right-10 w-64 h-64 bg-blue-100 rounded-full blur-3xl opacity-40"></div>
+                <div class="absolute bottom-0 left-10 w-64 h-64 bg-blue-200 rounded-full blur-3xl opacity-40"></div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-24 bg-white reveal">
+    <!-- Leading Provider Section -->
+    <section id="about" class="py-24 bg-white relative overflow-hidden">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <h3 class="accent-text font-bold uppercase tracking-widest mb-4">Our Legacy</h3>
-                    <h2 class="text-4xl md:text-5xl font-extrabold text-[#212529] leading-tight mb-8">Bridging the Gap Between Concept and Reality</h2>
-                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                        Since 2007, CAD Drafting India has been at the forefront of the <a href="https://www.caddraftingindia.com/services/architectural-drafting.php" title="Architectural Outsourcing Industry: Precision Drafting Solutions" class="link"><strong>architectural outsourcing industry</strong></a>. We specialize in providing high-end technical support to architects, engineers, and construction firms across the US, UK, Australia, Canada, Europe, and India.
-                    </p>
-                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
-                        Our team combines deep technical knowledge of building codes with mastery of the latest CAD and BIM software to deliver construction sets that are both accurate and efficient.
-                    </p>
-                    <div class="grid grid-cols-2 gap-8">
-                        <div>
-                            <span class="block text-4xl font-black accent-text">1500+</span>
-                            <span class="text-sm font-bold uppercase tracking-wider text-slate-400">Projects Completed</span>
-                        </div>
-                        <div>
-                            <span class="block text-4xl font-black accent-text">20+</span>
-                            <span class="text-sm font-bold uppercase tracking-wider text-slate-400">Global Regions</span>
-                        </div>
-                    </div>
+            <div class="flex flex-col lg:flex-row items-start gap-16">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900 leading-[1.2] lg:text-right">
+                        At Revit BIM Services, we <br class="hidden lg:block" />
+                        make your design <br class="hidden lg:block" />
+                        constructible
+                    </h2>
                 </div>
-                <div class="relative">
-                    <div class="aspect-square bg-slate-100 rounded-3xl overflow-hidden shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1503387762-592dea58ef21?auto=format&fit=crop&q=80&w=1000" alt="Drafting Office" class="w-full h-full object-cover">
-                    </div>
-                    <div class="absolute -bottom-6 -left-6 bg-white p-8 rounded-2xl shadow-xl hidden md:block border border-slate-100">
-                        <p class="text-slate-800 font-bold italic">"Accuracy is our standard, <br>precision is our promise."</p>
+                <div class="lg:w-1/2 space-y-8">
+                    <div>
+                        <h3 class="text-3xl font-bold text-blue-500 mb-6">
+                            Leading Revit BIM Service Provider since 2007
+                        </h3>
+                        <p class="text-lg text-slate-800 leading-relaxed text-justify mb-8">
+                            Revit BIM Services is a premier digital engineering and construction modeling company that delivers complex and high-profile projects with nano precision and uncompromising quality. Our experience combined with our state-of-the-art technology and expertise allows us to excel in delivering Revit modeling projects across all building and infrastructure sectors globally at competitive rates.
+                        </p>
+                        <p class="text-lg text-slate-800 leading-relaxed font-medium">
+                            For more than 16 years, we have been a change driver for our partners in improvising overall construction process by providing comprehensive BIM Support.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="py-24 bg-slate-50 reveal">
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h3 class="accent-text font-bold uppercase tracking-widest mb-4">Core Competencies</h3>
-                <h2 class="text-4xl font-bold text-[#212529]">Our Specialized Services</h2>
+                <h2 class="text-blue-700 font-bold tracking-widest uppercase mb-2">Our Expertise</h2>
+                <h3 class="text-4xl font-bold text-blue-950">Specialized BIM Solutions</h3>
             </div>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="expertise-card group relative bg-white overflow-hidden rounded-xl shadow-sm border border-slate-200 p-10 flex flex-col items-center text-center cursor-pointer transition-all duration-300 hover:shadow-xl">
-                    <div class="icon-box mb-6 p-4 rounded-full bg-slate-50 accent-text transition-colors duration-300">
-                        <i class="fas fa-file-pdf text-2xl"></i>
+            <div class="grid md:grid-cols-3 gap-8" id="services-container">
+                <!-- Services injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Presence Section -->
+    <section id="contact" class="bg-slate-700 text-white relative">
+        <div class="h-24 footer-skyline opacity-20"></div>
+        
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid lg:grid-cols-5 gap-8 items-start">
+                <div class="lg:col-span-1 space-y-6 flex flex-col justify-center h-full">
+                    <div class="logo-container">
+                        <div class="logo-icon bg-blue-500 shadow-lg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <div class="text-white font-black text-2xl border-l-4 border-blue-400 pl-4 uppercase tracking-tighter">
+                            Revit BIM<br>Services
+                        </div>
                     </div>
-                    <h3 class="text-sm font-bold tracking-wider text-slate-800 group-hover:accent-text transition-colors uppercase">PDF TO CAD</h3>
-                    <p class="mt-4 text-xs text-slate-500 leading-relaxed">Accurate conversion of raster images and PDF sketches into editable DWG formats.</p>
-                    <div class="accent-line absolute bottom-0 left-0 w-0 h-1 accent-bg transition-all duration-300"></div>
                 </div>
-                <div class="expertise-card group relative bg-white overflow-hidden rounded-xl shadow-sm border border-slate-200 p-10 flex flex-col items-center text-center cursor-pointer transition-all duration-300 hover:shadow-xl">
-                    <div class="icon-box mb-6 p-4 rounded-full bg-slate-50 accent-text transition-colors duration-300">
-                        <i class="fas fa-drafting-compass text-2xl"></i>
+
+                <!-- USA -->
+                <div class="text-center">
+                    <h4 class="text-2xl font-bold mb-2 border-b-2 border-slate-500 pb-2 inline-block px-8 uppercase">USA</h4>
+                    <div class="mt-4 text-sm leading-relaxed text-slate-300">
+                        <p>418 Broadway, 10229, Albany,</p>
+                        <p>NY 12207, USA</p>
+                        <span class="text-blue-400 block font-medium mt-2">+1 510 680 3390</span>
                     </div>
-                    <h3 class="text-sm font-bold tracking-wider text-slate-800 group-hover:accent-text transition-colors uppercase">Arch Drafting</h3>
-                    <p class="mt-4 text-xs text-slate-500 leading-relaxed">Full construction documentation sets, elevations, and detailed floor plans.</p>
-                    <div class="accent-line absolute bottom-0 left-0 w-0 h-1 accent-bg transition-all duration-300"></div>
                 </div>
-                <div class="expertise-card group relative bg-white overflow-hidden rounded-xl shadow-sm border border-slate-200 p-10 flex flex-col items-center text-center cursor-pointer transition-all duration-300 hover:shadow-xl">
-                    <div class="icon-box mb-6 p-4 rounded-full bg-slate-50 accent-text transition-colors duration-300">
-                        <i class="fas fa-cube text-2xl"></i>
+
+                <!-- Australia -->
+                <div class="text-center">
+                    <h4 class="text-2xl font-bold mb-2 border-b-2 border-slate-500 pb-2 inline-block px-8 uppercase">Australia</h4>
+                    <div class="mt-4 text-sm leading-relaxed text-slate-300">
+                        <p>17 Tinks Rd, Narre Warren,</p>
+                        <p>Melbourne VIC 3805</p>
+                        <span class="text-blue-400 block font-medium mt-2">+61 48 999 7117</span>
                     </div>
-                    <h3 class="text-sm font-bold tracking-wider text-slate-800 group-hover:accent-text transition-colors uppercase">3D Rendering</h3>
-                    <p class="mt-4 text-xs text-slate-500 leading-relaxed">Photorealistic interior and exterior visualizations for project marketing.</p>
-                    <div class="accent-line absolute bottom-0 left-0 w-0 h-1 accent-bg transition-all duration-300"></div>
                 </div>
-                <div class="expertise-card group relative bg-white overflow-hidden rounded-xl shadow-sm border border-slate-200 p-10 flex flex-col items-center text-center cursor-pointer transition-all duration-300 hover:shadow-xl">
-                    <div class="icon-box mb-6 p-4 rounded-full bg-slate-50 accent-text transition-colors duration-300">
-                        <i class="fas fa-layer-group text-2xl"></i>
+
+                <!-- UK -->
+                <div class="text-center">
+                    <h4 class="text-2xl font-bold mb-2 border-b-2 border-slate-500 pb-2 inline-block px-8 uppercase">UK</h4>
+                    <div class="mt-4 text-sm leading-relaxed text-slate-300">
+                        <p>108 Ramney Drive Enfield,</p>
+                        <p>London EN3 6DX</p>
+                        <span class="text-blue-400 block font-medium mt-2">+44 333 011 9045</span>
                     </div>
-                    <h3 class="text-sm font-bold tracking-wider text-slate-800 group-hover:accent-text transition-colors uppercase">BIM Solutions</h3>
-                    <p class="mt-4 text-xs text-slate-500 leading-relaxed">LOD 100 to LOD 500 Revit modeling and clash detection for MEP and Structure.</p>
-                    <div class="accent-line absolute bottom-0 left-0 w-0 h-1 accent-bg transition-all duration-300"></div>
+                </div>
+
+                <!-- India -->
+                <div class="text-center border-l-0 lg:border-l border-slate-600 pl-0 lg:pl-8">
+                    <h4 class="text-2xl font-bold mb-2 border-b-2 border-slate-500 pb-2 inline-block px-8 uppercase">India</h4>
+                    <div class="mt-4 text-sm leading-relaxed text-slate-300">
+                        <p>304, Salister, Rajpath Rangoli Road,</p>
+                        <p>Bodakdev, Ahmedabad - 380054</p>
+                        <p>Gujarat, India</p>
+                        <span class="text-blue-400 block font-medium mt-2">+91 079 4800 4669</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 pt-8 border-t border-slate-600 flex flex-col md:flex-row justify-center items-center text-xl gap-4">
+                <div class="flex items-center gap-3 select-text">
+                    <span class="text-2xl">✉️</span>
+                    <span class="text-blue-400 font-bold">services@revitbimservices.com</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Project Showcase -->
-    <section id="projects" class="py-24 bg-white reveal">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
-                <div class="max-w-xl">
-                    <h3 class="accent-text font-bold uppercase tracking-widest mb-4">Portfolio</h3>
-                    <h2 class="text-4xl font-bold text-[#212529]">Featured Projects</h2>
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-400 py-8 border-t border-slate-700">
+        <div class="container mx-auto px-6 flex flex-col items-center gap-6">
+            <div class="logo-container opacity-80 scale-90">
+                <div class="logo-icon grayscale brightness-150">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
                 </div>
-                <div class="mt-6 md:mt-0">
-                    <p class="text-slate-500">A collection of our technical excellence.</p>
+                <div class="flex flex-col leading-tight text-left">
+                    <span class="text-white font-extrabold text-lg tracking-tight uppercase">Revit</span>
+                    <span class="text-slate-400 font-bold text-[10px] tracking-[0.2em] uppercase">BIM Services</span>
                 </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="project-card group cursor-pointer">
-                    <div class="relative overflow-hidden rounded-2xl aspect-[4/3] bg-slate-100 shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="Commercial Project" class="w-full h-full object-cover transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-8 flex flex-col justify-end">
-                            <h4 class="text-white font-bold text-xl uppercase tracking-tight">Luxury Commercial Plaza</h4>
-                            <p class="text-slate-300 text-sm mt-2">Detailed Construction Set & BIM Coordination</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card group cursor-pointer">
-                    <div class="relative overflow-hidden rounded-2xl aspect-[4/3] bg-slate-100 shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Office Space" class="w-full h-full object-cover transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-8 flex flex-col justify-end">
-                            <h4 class="text-white font-bold text-xl uppercase tracking-tight">Modern Office Interior</h4>
-                            <p class="text-slate-300 text-sm mt-2">Space Planning & MEP Drafting</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="project-card group cursor-pointer">
-                    <div class="relative overflow-hidden rounded-2xl aspect-[4/3] bg-slate-100 shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" alt="Residential" class="w-full h-full object-cover transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-8 flex flex-col justify-end">
-                            <h4 class="text-white font-bold text-xl uppercase tracking-tight">Custom Residential Estate</h4>
-                            <p class="text-slate-300 text-sm mt-2">Permit Drawings & 3D Visualization</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer / Contact Information -->
-    <footer id="contact" class="bg-[#212529] text-slate-400 py-20">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 text-left">
-                <!-- Branding -->
-                <div class="col-span-1 lg:col-span-1">
-                    <h1 class="text-white font-bold text-2xl mb-6 uppercase tracking-tight">CAD <span class="accent-text">DRAFTING</span> INDIA</h1>
-                    <p class="text-sm leading-relaxed mb-6">Established in 2007, providing high-precision drafting and BIM solutions globally.</p>
-                </div>
-
-                <!-- Contact Details (Unclickable as requested) -->
-                <div class="col-span-1">
-                    <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Contact Us</h4>
-                    <ul class="space-y-4 text-sm">
-                        <li class="flex items-start">
-                            <i class="fas fa-envelope accent-text mt-1 mr-3"></i>
-                            <span class="text-slate-300 break-all">services@caddraftingindia.com</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Phone Numbers (Unclickable as requested) -->
-                <div class="col-span-1 lg:col-span-2">
-                    <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Global Support</h4>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-                        <div class="flex flex-col">
-                            <span class="text-white/50 text-[10px] uppercase font-bold mb-1">USA</span>
-                            <span class="text-slate-300">+1 510 680 3390</span>
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-white/50 text-[10px] uppercase font-bold mb-1">Australia</span>
-                            <span class="text-slate-300">+61 48 999 7117</span>
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-white/50 text-[10px] uppercase font-bold mb-1">UK</span>
-                            <span class="text-slate-300">+44 333 011 9045</span>
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-white/50 text-[10px] uppercase font-bold mb-1">India</span>
-                            <span class="text-slate-300">+91 79 4800 4669</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="pt-8 border-t border-slate-800 text-center text-[10px] uppercase tracking-widest">
-                &copy; CAD Drafting India. All Rights Reserved.
             </div>
         </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const navbar = document.getElementById('navbar');
+        const services = [
+            {
+                title: "Architectural BIM",
+                icon: "fas fa-pencil-ruler",
+                desc: "Detailed 3D architectural models representing design intent, spatial layouts, and building components with high precision."
+            },
+            {
+                title: "Structural BIM",
+                icon: "fas fa-gear",
+                desc: "Precise modeling for foundations, framing, and load-bearing elements to ensure structural integrity and coordination."
+            },
+            {
+                title: "MEP BIM",
+                icon: "fas fa-bolt",
+                desc: "Integrated mechanical, electrical, and plumbing systems modeling to identify clashes early and improve performance."
+            },
+            {
+                title: "Scan to BIM",
+                icon: "fas fa-up-right-and-down-left-from-center",
+                desc: "Transforming physical structures into intelligent 3D models for accurate documentation and renovation planning."
+            },
+            {
+                title: "Steel Detailing",
+                icon: "fas fa-layer-group",
+                desc: "Fabrication-ready drawings and structural modeling ensuring precise installation and smooth construction."
+            },
+            {
+                title: "Clash Detection",
+                icon: "fas fa-microchip",
+                desc: "Early conflict identification reducing rework and avoiding costly on-site delays through multi-discipline coordination."
+            }
+        ];
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const servicesContainer = document.getElementById('services-container');
+            services.forEach(s => {
+                servicesContainer.innerHTML += `
+                    <div class="service-card group p-8 rounded-xl bg-white shadow-sm hover:shadow-2xl transition-all duration-500 border-b-4 border-b-transparent">
+                        <div class="bg-blue-50 w-16 h-16 rounded-lg flex items-center justify-center text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors mb-6">
+                            <i class="${s.icon} text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-blue-950">${s.title}</h4>
+                        <p class="text-slate-600 leading-relaxed">${s.desc}</p>
+                    </div>
+                `;
+            });
+
+            const nav = document.getElementById('navbar');
             window.addEventListener('scroll', () => {
-                if (window.scrollY > 300) {
-                    navbar.classList.remove('opacity-0', 'pointer-events-none');
-                    navbar.classList.add('nav-scrolled');
+                if (window.scrollY > 50) {
+                    nav.classList.add('glass-nav', 'shadow-md', 'border-slate-100');
+                    nav.classList.remove('py-4');
+                    nav.classList.add('py-2');
                 } else {
-                    navbar.classList.add('opacity-0', 'pointer-events-none');
-                    navbar.classList.remove('nav-scrolled');
+                    nav.classList.remove('glass-nav', 'shadow-md', 'border-slate-100');
+                    nav.classList.remove('py-2');
+                    nav.classList.add('py-4');
                 }
             });
 
-            const revealElements = document.querySelectorAll('.reveal');
-            const revealOnScroll = () => {
-                const triggerBottom = window.innerHeight * 0.85;
-                revealElements.forEach(el => {
-                    const top = el.getBoundingClientRect().top;
-                    if (top < triggerBottom) el.classList.add('active');
-                });
-            };
-            window.addEventListener('scroll', revealOnScroll);
-            revealOnScroll();
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
         });
     </script>
 </body>
 </html>
-
-
-
-
-
